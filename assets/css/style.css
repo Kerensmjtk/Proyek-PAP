@@ -1,0 +1,874 @@
+body {
+    font-family:"Monstrserrat", 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+}
+
+#topbar {
+    background-color: #7289c2;
+    color: #15477A;
+    height: 50px;
+    line-height: 50px;
+}
+.top-contact, .sosmed {
+    list-style: none;
+    padding: 0;
+}
+#topbar li {
+    display: inline-block;
+}
+
+#topbar li a {
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px;
+}
+#topbar li a i{
+    /*color: #F2C808;*/
+    margin-right: 5px;
+}
+
+#topbar.sosmed li a {
+    padding: 0 5px;
+}
+#topbar.sosmed li a i {
+    color: #fff;
+}
+.brand img{
+    width: 100px;
+    height: auto;
+}
+
+/* css untuk header */
+header{
+    padding: 30px 0;
+}
+.brand {
+    display: flex;
+}
+.brand img{
+    margin-right: 20px;
+}
+.brand .brand-name h1{
+    font-size: 25px;
+    color: #15477A;
+    text-transform: uppercase;
+}
+.brand .brand-name h3{
+    font-size: 18px;
+    font-family: Raleway,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888888;
+}
+.pembungkus-searchbox{
+    display: flex;
+    align-items: center;
+}
+.btn.btn-utama{
+    background-color: #7289c2;
+    color: #F2C808;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.btn.btn-utama:hover{
+    background-color: #7289c2;
+}
+
+
+/*css untuk menu navbar */
+/* Navbar umum */
+.navbar {
+  padding: 0;
+  border-bottom: 5px solid #F2C808;;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  height: 60px;
+}
+
+/* Styling untuk latar belakang biru */
+.bg-biru {
+  background-color: #7289c2 !important;
+  color: #fff;
+}
+
+/* Warna teks pada navbar */
+/*.navbar-light .navbar-nav .nav-link {
+  
+}
+
+/* Warna teks pada link yang aktif */
+/*.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+ 
+}*/
+
+/* Warna teks untuk elemen yang aktif */
+.active,
+.nav-item.active a {
+  color: #7289c2;
+}
+
+/* Styling pada setiap link */
+.navbar-dark .navbar-nav .nav-link {
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect pada link */
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #F2C808; /* Ganti warna ketika dihover */
+  color: #fff;
+}
+
+/* Navbar aktif */
+.navbar-active {
+  background-color: #F2C808;
+  border-bottom: 5px solid #7289c2;
+}
+
+
+/* css untuk slider hero area*/
+#hero-area{
+    position: relative;
+}
+.slider-item-img img {
+    max-width: 100%; /* Mengatur lebar maksimum gambar sesuai dengan ukuran parent element */
+    height: auto; /* Menyesuaikan tinggi gambar sesuai proporsi aslinya */
+    display: block; /* Menghindari space tambahan di sekitar gambar */
+    object-fit: cover; /* Memastikan gambar terisi secara proporsional tanpa merubah aspek rasio */
+  }
+  
+
+#hero-area .slider-item-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 07);
+    padding: 20px;
+    text-align: center;
+}
+#slider-hero-nav .owl-prev,
+#slider-hero-nav .owl-next{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    background-color:#7289c2;
+    color: #fff;
+    outline: none;
+    padding: 10px 25px;
+    transition: background-color 0.3s;
+}
+#slider-hero-nav .owl-prev{
+    left: 0;
+    border-radius: 0 50px 50px 0;
+}
+#slider-hero-nav .owl-next{
+    right: 0px;
+    border-radius: 50px 0 0 50px
+}
+#slider-hero-nav .owl-prev:hover,
+#slider-hero-nav .owl-next:hover{
+    cursor: pointer;
+    background-color: #F2C808;
+}
+#hero-area .slider-item-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    text-align: center;
+    font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    width: 50%;
+}
+#hero-area .slider-item-content h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+#hero-area .slider-item-content p{
+    font-size: 18px;
+}
+
+/* css untuk section berita terkini */
+#berita-terkini{
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+#prestasi .col-item-kanan{
+    padding: 20px 30px 20px 20px;
+}
+.section-item{
+    margin: 70px 0;
+    box-shadow: 0 0 25px #dddd ;
+    min-height: 260px;
+    overflow: hidden;
+   
+}
+.section-item-thumbnail{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+.section-title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.section-title h2{
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #15477A;
+    font-weight: 600;
+}
+.section-title h2:after{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: #F2C808;
+    bottom: -20px;
+    left: 50%;
+    transform:translateX(-50%) ;
+}
+.section-item-title {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.section-item-title h3{
+    font-size: 18px;
+    color: #15477A;
+   
+}
+.section-item-title span{
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+   
+}
+.section-item-title span i{
+    margin-right: 5px;
+}
+.section-item-title span:first-of-type{
+    margin-right: 15px;
+}
+.section-item-body p{
+    font-size: 12px;
+    line-height: 25px;
+    color: #666;
+}
+
+.tombol-selengkapnya{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: auto;
+}
+.btn.btn-more{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:#ddd;
+    background-color: #7289c2;;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #7289c2;
+    border-radius: 0;
+    padding: 8px 40px;
+}
+
+.btn.btn-more:hover{
+    background-color: #35487a;;
+   
+}
+
+/* Bagian card*/
+.card {
+  border: none; /* Menghilangkan border agar card rata */
+  border-radius: 1rem; /* Menggunakan border-radius untuk sudut yang lebih lembut */
+  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15); /* Shadow untuk efek 3D */
+  background-color: #fff; /* Warna latar belakang */
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%; /* Tinggi card agar mengisi konten */
+}
+
+.card-body {
+  flex: 1 1 auto; /* Membuat card-body fleksibel */
+  padding: 1rem; /* Padding pada card-body */
+  color: #000; /* Warna teks */
+}
+
+.card-title {
+  margin-bottom: 0.5rem; /* Margin antara judul dan konten */
+}
+
+.card-header {
+  padding: 0.5rem 1rem; /* Padding pada header */
+  margin-bottom: 0;
+  color: #000; /* Warna teks header */
+  background-color: #fff; /* Warna latar belakang header */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); /* Garis bawah pada header */
+}
+
+/* Contoh warna latar belakang dengan gradien */
+.bg-gradient-primary {
+  background-image: linear-gradient(310deg, #5e72e4 0%, #825ee4 100%);
+}
+
+.bg-gradient-success {
+  background-image: linear-gradient(310deg, #2dce89 0%, #2dcecc 100%);
+}
+
+.bg-gradient-warning {
+  background-image: linear-gradient(310deg, #fb6340 0%, #fbb140 100%);
+}
+
+.bg-gradient-danger {
+  background-image: linear-gradient(310deg, #f5365c 0%, #f56036 100%);
+}
+
+.bg-gradient-light {
+  background-image: linear-gradient(310deg, #ced4da 0%, #ebeff4 100%);
+}
+
+.bg-gradient-secondary {
+  background-image: linear-gradient(310deg, #627594 0%, #a8b8d8 100%);
+}
+
+.bg-gradient-info {
+  background-image: linear-gradient(310deg, #1171ef 0%, #11cdef 100%);
+}
+
+  
+/* CSS untuk Lembaga */
+#Lembaga .section-body-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7289c2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  min-height: 200px; /* Menentukan tinggi minimum dari setiap box */
+}
+
+#Lembaga .section-body-item h4 {
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 18px; /* Mengurangi ukuran font judul */
+}
+
+#Lembaga .section-body-item p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+#Lembaga .section-body-item .read-more {
+  background-color: #fff;
+  color: #7289c2;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#Lembaga .section-body-item .read-more:hover {
+  background-color: #35487a;;
+  color: #fff;
+}
+
+/* Untuk ikon */
+#Lembaga .icon-fas-fa-university {
+  font-size: 45px;
+}
+
+
+
+/*css untuk kegiatan*/
+#Kegiatan .row:first-of-type {
+    margin-bottom: 30px;
+  }
+  
+  .section-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .section-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 0; /* Remove padding for images */
+  }
+  
+  .section-thumbnail .tanggal {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .section-thumbnail .tanggal span.tgl {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: -10px;
+  }
+  
+  .section-thumbnail .tanggal span.tgl-2 {
+    font-size: 14px;
+  }
+  
+  .tombol-selengkapnya {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #Kegiatan .section-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #7289c2;
+    line-height: 28px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  #Kegiatan .section-content p {
+    font-size: 14px;
+    color: #777777;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  
+  #Kegiatan .section-content p .more {
+    color: #15477A;
+    font-weight: 500;
+  }
+  
+  .section-meta a {
+    background-color: #15477A;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .section-meta a i {
+    margin-right: 5px;
+  }
+  
+/* CSS footer*/
+footer {
+    color: #fff;
+    background-color: #7289c2;
+    padding: 80px 0;
+  }
+  
+  footer .footer-col {
+    padding-right: 40px;
+  }
+  
+  footer .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .brand img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+  
+  footer .brand h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  footer .tentang {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+  }
+  
+  footer .sosmed {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer .sosmed li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  footer .sosmed li a {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    transition: color 0.3s ease;
+  }
+  
+  footer .sosmed li a:hover {
+    color: #dadada;
+  }
+  
+  footer .kontak,
+  footer .navigasi {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer .kontak li,
+  footer .navigasi li {
+    margin-bottom: 10px;
+  }
+  
+  footer .kontak li i,
+  footer .navigasi li i {
+    margin-right: 10px;
+  }
+ /* Tambahkan CSS ini untuk bagian hak cipta */
+footer .copyright {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 40px;
+}
+  
+/* Gaya navigasi yang lebih menarik */
+footer .navigasi {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+footer .navigasi li {
+    flex: 0 0 50%; /* Menyusun navigasi dalam dua kolom */
+    margin-bottom: 15px;
+}
+  
+footer .navigasi a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+footer .navigasi a:hover {
+    color: #dadada;
+}
+ 
+
+
+
+/* CSS untuk section search-result */
+/* CSS untuk section search-result */
+.search-result {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f8f9fa; /* Ubah sesuai kebutuhan */
+}
+
+.search-result .category-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #333; /* Ubah sesuai kebutuhan */
+}
+
+.search-result .post-entry-2 {
+  margin-bottom: 30px;
+  border: 1px solid #eee; /* Tambahkan border untuk memisahkan entri */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff; /* Tambahkan background untuk setiap entri */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-result .post-entry-2 .thumbnail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.search-result .post-entry-2 h3 a {
+  color: #333; /* Ubah sesuai kebutuhan */
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.search-result .post-entry-2 h3 a:hover {
+  color: #555; /* Ubah saat hover */
+}
+
+.search-result .post-entry-2 p {
+  color: #666; /* Ubah sesuai kebutuhan */
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* CSS untuk Pagination */
+.search-result .custom-pagination {
+  margin-top: 30px;
+}
+
+.search-result .custom-pagination a {
+  padding: 8px 15px;
+  margin-right: 5px;
+  background-color: #333; /* Ubah sesuai kebutuhan */
+  color: #fff; /* Ubah sesuai kebutuhan */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.search-result .custom-pagination a:hover {
+  background-color: #555; /* Ubah saat hover */
+}
+
+
+
+
+  
+  
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.text-uppercase {
+  color: #444;
+}
+
+.card-text {
+  margin-top: 20px;
+}
+.card-text.text-black {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-text.text-black:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+
+.comment .avatar {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+}
+
+.comment .avatar-img,
+.comment .avatar-initials,
+.comment .avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.comment .avatar-img {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.comment .avatar-initials {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  line-height: 0;
+  background-color: rgba(var(--color-black-rgba), 0.1);
+}
+
+.comment .avatar-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(var(--color-black-rgba), 0.1) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='%23fff' d='M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z'/%3e%3c/svg%3e") no-repeat center/1.75rem;
+}
+
+.comment .avatar-indicator {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  height: 20%;
+  display: block;
+  background-color: rgba(var(--color-black-rgba), 0.1);
+  border-radius: 50%;
+}
+
+.comment .avatar-group {
+  display: inline-flex;
+}
+
+.comment .avatar-group .avatar+.avatar {
+  margin-left: -0.75rem;
+}
+
+.comment .avatar-group .avatar:hover {
+  z-index: 1;
+}
+
+.comment .avatar-sm,
+.comment .avatar-group-sm>.avatar {
+  width: 2.125rem;
+  height: 2.125rem;
+  font-size: 1rem;
+}
+
+.comment .avatar-sm .avatar-placeholder,
+.comment .avatar-group-sm>.avatar .avatar-placeholder {
+  background-size: 1.25rem;
+}
+
+.comment .avatar-group-sm>.avatar+.avatar {
+  margin-left: -0.53125rem;
+}
+
+.comment .avatar-lg,
+.comment .avatar-group-lg>.avatar {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+}
+
+.comment .avatar-lg .avatar-placeholder,
+.comment .avatar-group-lg>.avatar .avatar-placeholder {
+  background-size: 2.25rem;
+}
+
+.comment .avatar-group-lg>.avatar+.avatar {
+  margin-left: -1rem;
+}
+
+.comment .avatar-light .avatar-indicator {
+  box-shadow: 0 0 0 2px rgba(var(--color-white-rgba), 0.75);
+}
+
+.comment .avatar-group-light>.avatar {
+  box-shadow: 0 0 0 2px rgba(var(--color-white-rgba), 0.75);
+}
+
+.comment .avatar-dark .avatar-indicator {
+  box-shadow: 0 0 0 2px rgba(var(--color-black-rgba), 0.25);
+}
+
+.comment .avatar-group-dark>.avatar {
+  box-shadow: 0 0 0 2px rgba(var(--color-black-rgba), 0.25);
+}
+
+.comment textarea {
+  font-family: inherit;
+}
+
+.comment .comment-replies-title,
+.comment .comment-title {
+  text-transform: uppercase;
+  color: var(--color-black) !important;
+  letter-spacing: 0.1rem;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.comment .comment-meta .text-muted,
+.comment .reply-meta .text-muted {
+  font-family: var(--font-secondary);
+  font-size: 12px;
+}
+
+
+.scroll-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #7289c2;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 35px;
+  transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
+}
+
+.scroll-top-btn:hover {
+  background-color: #35487a;
+  color:  #ffffff;
+}
